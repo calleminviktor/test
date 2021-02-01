@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deelnemers",
+  "info": {
+    "name": "Deelnemers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Profielfoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Naam": {
+      "type": "string"
+    },
+    "voornaam": {
+      "type": "string"
+    },
+    "beschrijvingdeelnemer": {
+      "type": "richtext"
+    },
+    "Adres": {
+      "type": "string"
+    },
+    "Gsm_nummer": {
+      "type": "string"
+    },
+    "Email_Adres": {
+      "type": "email"
+    }
+  }
+}

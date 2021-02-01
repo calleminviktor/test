@@ -1,0 +1,189 @@
+.body{
+    background-image:url("kulakparticipants/public/uploads/100113607_l_c1dbb55a07.jpg");
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position:50% -2% ;
+    overflow:hidden;
+}
+    /*General*/
+
+    .placeholder{height:5vw}
+
+    p,h3,h4{
+        font-family: Comfortaa, sans-serif;
+    }
+    h4{
+        font-size: 5vw;
+    }
+    h3{color:white;
+    font-size:6.5vw}
+    .oranje{
+        color:#f08050;
+    }
+    
+    
+    
+    .tekstcolleagues{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width:20;
+    }
+    .community{
+        margin-bottom: -1vw;
+    }
+    .meet{
+        color:white;
+        width:35vw;
+        text-align:center;
+        font-size:2vw
+    }
+    #footerTitel{
+        display: flex;
+        justify-content:center;
+    
+    
+    }
+    .voornaam{color:white}
+    /* LOGO */
+        .logocontainer{
+            width:16vw;
+            overflow: hidden;
+            margin:0vw 8vw 0 8vw;
+        }
+        .logo{
+            width:100%;
+        }
+    
+    /*DeelnemerCards*/
+        /*ALIGNMENT EN POSITIONS*/
+    .Profielfoto{
+        width:15vw;
+        border-radius:50%;
+    }
+    .naamDiv{
+        display:flex
+    }
+    .deelnemerContainer{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding:4%;
+    }
+    .Deelnemer{
+        float:left;
+        margin:0% 4vw;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        font-size: 3vw;
+    }
+        /*MARGINS AND PADDINGS*/
+    .deelnemerNaam{
+        margin-left:0.8vw;
+    }
+    /* Overlay */
+    .roundoverlay{
+        background-color:rgba(0,80,121,0.7);
+        border-top-right-radius:40%;
+        border-top-left-radius:40%;
+        width:100vw;
+       
+    }
+    .Profielfoto{
+        z-index: 1;
+    }
+    
+    /* POPUP */
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+      }
+    
+      .fas,.ModalTussenTitel{
+          color:#f08050;
+          font-size:1vw;
+    
+      }
+      .achternaam{
+          color:#f08050!important;
+          margin-left:0.5rem
+      }
+      .ModalNaam{
+          display:flex
+      }
+      
+      /* Modal Content/Box */
+      .modalcontent {
+        background-color:rgba(0,80,121,0.9);
+        z-index:2;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 0px;
+        width: 50vw; /* Could be more or less, depending on screen size */
+        height:50vw;
+        border-radius: 50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .modalcontent h4{
+          font-size: 0.8rem
+      }
+    
+      .modalcontent img {
+          border-radius: 50%;
+          width:40%;
+          height:40%;
+      }
+      .ModalNaam {
+          color:white;
+          font-size:2vw;
+          font-weight:100
+      }
+  
+
+
+  /* MEDIA QUERY */
+  /* //Extra Small Devices (Iphone SE1,..) */
+  @media (min-width: 320px) {
+      .logocontainer{width:45vw;
+    margin:0vw 0vw 0vw 0vw;}
+      .deelnemerContainer{
+
+          grid-template-columns:50% 50%;
+      }
+      .Profielfoto{
+          width:25vw;
+      }
+      .Deelnemer{
+          font-size:3.5vw
+      }
+      .meet{
+          font-size:4.5vw
+      }
+  }
+
+  /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
